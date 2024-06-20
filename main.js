@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function () {
         var greetingMessage_1 = '';
 
         if (currentTime < 12) {
-            greetingMessage_1 = 'おはようございます！';
+            greetingMessage_1 = 'おはよう！';
         }
         else if (currentTime < 18) {
             greetingMessage_1 = 'こんにちは！';
