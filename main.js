@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', function () {
     if (themeButton && bodyElement) {
         themeButton.addEventListener('click', function () {
             bodyElement.classList.toggle('dark-mode');
-            themeButton.textContent = bodyElement.classList.contains('dark-mode') ? 'ライトモードに切り替え' : 'ダークモードに切り替え';
+            themeButton.textContent = bodyElement.classList.contains('dark-mode') ? '元に戻す' : 'ダークモードに切り替えられないボタン';
         });
     }
 
@@ -72,7 +72,7 @@ window.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
             var email = document.getElementById('email').value;
             var message = document.getElementById('message').value;
-            formResponse.textContent = "\u30E1\u30FC\u30EB\u30A2\u30C9\u30EC\u30B9: ".concat(email, ", \u30E1\u30C3\u30BB\u30FC\u30B8: ").concat(message, " \u3092\u53D7\u3051\u53D6\u308A\u307E\u3057\u305F\u3002\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059\uFF01");
+            formResponse.textContent = "\u30E1\u30FC\u30EB\u30A2\u30C9\u30EC\u30B9: ".concat(email, ", \u30E1\u30C3\u30BB\u30FC\u30B8: ").concat(message, " \u3092\u53D7\u3051\u53D6\u308A\u307E\u3057\u305F\u3002\u500b\u4eba\u60c5\u5831\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\uff01");
         });
     }
 
